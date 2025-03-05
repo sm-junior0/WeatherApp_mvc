@@ -96,10 +96,10 @@ public class WeatherDAOImpl implements WeatherDAO {
 
             ps.setInt(1, id);
             int rowsDeleted = ps.executeUpdate();
-            System.out.println("Rows deleted: " + rowsDeleted); // Debugging line
+            System.out.println("Rows deleted: " + rowsDeleted);
         } catch (SQLException e) {
             e.printStackTrace();
-            System.err.println("Error deleting weather record: " + e.getMessage()); // Log the error
+            System.err.println("Error deleting weather record: " + e.getMessage());
         }
     }
 }

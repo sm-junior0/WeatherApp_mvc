@@ -160,11 +160,10 @@
         <td><%= weather.getTemperature() %></td>
         <td><%= weather.getDescription() %></td>
         <td>
-            <a href="<%= request.getContextPath() %>/weather?action=edit&id=<%= weather.getId() %>">Edit</a>
-<%--            <a href="<%= request.getContextPath() %>/weather?action=delete&id=<%= weather.getId() %>"--%>
-<%--               onclick="return confirm('Are you sure you want to delete this record?');">--%>
-<%--                Delete--%>
-<%--            </a>--%>
+            <a href="<%= request.getContextPath() %>/weather?action=edit&id=<%= weather.getId() %>">Edit</a> |
+            <a href="<%= request.getContextPath() %>/weather?action=delete&id=<%= weather.getId() %>">
+                Delete
+            </a>
         </td>
     </tr>
     <% } %>
